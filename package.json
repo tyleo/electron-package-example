@@ -15,7 +15,14 @@
   },
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "packages/_/*"
     ]
+  },
+  "scripts": {
+    "build": "ttsc -b",
+    "clean": "yarn lerna run --parallel clean & yarn clean:root",
+    "clean:node_modules": "lerna run --parallel clean:node_modules",
+    "clean:root": "rimraf node_modules"
   }
 }

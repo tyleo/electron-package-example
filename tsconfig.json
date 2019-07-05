@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/App"
+    },
+    {
+      "path": "./packages/Lib"
+    },
+    {
+      "path": "./packages/Web"
+    }
+  ]
+}
