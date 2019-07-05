@@ -15,6 +15,7 @@
   "scripts": {
     "build": "ttsc -b",
     "build:dev": "yarn build && yarn webpack -r esm --config target/ts/_Build/Dev.esm.js",
+    "build:test": "yarn build:dev && yarn ttsc -b tsconfig.test.json",
     "clean": "yarn clean:node_modules & yarn clean:target",
     "clean:node_modules": "rimraf node_modules",
     "clean:target": "rimraf target",

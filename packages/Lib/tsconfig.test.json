@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./target/test",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "paths": {
+      "Test": ["./test"]
+    },
+    "rootDir": "./test",
+    "tsBuildInfoFile": "./target/test/tsconfig.tsbuildinfo"
+  },
+  "include": ["./test/**/*.ts", "./test/**/*.tsx"]
+}
