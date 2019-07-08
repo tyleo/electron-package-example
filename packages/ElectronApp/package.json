@@ -1,0 +1,30 @@
+{
+  "name": "ElectronApp",
+  "description": "ElectronApp",
+  "version": "1.0.0",
+  "author": "Tyler Wolf Leonhardt",
+  "private": true,
+  "main": "./target/ts/index.js",
+  "types": "./target/ts/index.d.ts",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^12.0.12",
+    "Base_": "1.0.0",
+    "Lib": "1.0.0",
+    "Req": "1.0.0",
+    "Webpack_": "1.0.0",
+    "electron": "^5.0.6"
+  },
+  "scripts": {
+    "build": "ttsc -b",
+    "build:dev": "yarn build && yarn webpack -r esm --config target/ts/_Build/Dev.esm.js",
+    "build:prod": "yarn build && yarn webpack -r esm --config target/ts/_Build/Prod.esm.js",
+    "clean": "yarn clean:node_modules & yarn clean:target",
+    "clean:node_modules": "rimraf node_modules",
+    "clean:target": "rimraf target",
+    "start": "electron -r esm ./target/ts/main.js",
+    "start:dev": "electron ./target/webpack/dev/main.js",
+    "start:prod": "electron ./target/webpack/prod/main.js",
+    "watch": "ttsc -b --w"
+  }
+}
