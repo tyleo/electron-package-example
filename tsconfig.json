@@ -2,10 +2,10 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/App"
+      "path": "./packages/Lib"
     },
     {
-      "path": "./packages/Lib"
+      "path": "./packages/NodeApp"
     },
     {
       "path": "./packages/Req"

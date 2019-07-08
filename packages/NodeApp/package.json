@@ -1,6 +1,6 @@
 {
-  "name": "App",
-  "description": "App",
+  "name": "NodeApp",
+  "description": "NodeApp",
   "version": "1.0.0",
   "author": "Tyler Wolf Leonhardt",
   "private": true,
@@ -8,9 +8,9 @@
   "types": "./target/ts/index.d.ts",
   "devDependencies": {
     "@types/node": "^12.0.12",
+    "Base_": "1.0.0",
     "Lib": "1.0.0",
     "Req": "1.0.0",
-    "Base_": "1.0.0",
     "Webpack_": "1.0.0"
   },
   "scripts": {

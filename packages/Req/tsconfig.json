@@ -3,6 +3,7 @@
   "compilerOptions": {
     "outDir": "./target/ts",
     "baseUrl": ".",
+    "module": "commonjs",
     "paths": {
       "Req": ["./ts"]
     },
