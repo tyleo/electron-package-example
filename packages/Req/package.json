@@ -1,25 +1,19 @@
 {
-  "name": "Lib",
-  "description": "Lib",
+  "name": "Req",
+  "description": "Req",
   "version": "1.0.0",
   "author": "Tyler Wolf Leonhardt",
   "private": true,
-  "main": "./index",
+  "main": "./target/ts/index.js",
   "types": "./target/ts/index.d.ts",
-  "dependencies": {
-    "stable": "^0.1.8"
-  },
   "devDependencies": {
     "Base_": "1.0.0"
   },
   "scripts": {
     "build": "ttsc -b",
-    "build:dev": "yarn build && yarn webpack -r esm --config target/ts/_Build/Dev.esm.js",
-    "build:test": "yarn build:dev && yarn ttsc -b tsconfig.test.json",
     "clean": "yarn clean:node_modules & yarn clean:target",
     "clean:node_modules": "rimraf node_modules",
-    "clean:target": "rimraf target",
-    "test": "jest"
+    "clean:target": "rimraf target"
   },
   "sideEffects": false
 }
