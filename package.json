@@ -21,6 +21,8 @@
   },
   "scripts": {
     "build": "ttsc -b",
+    "build:dev": "yarn workspace Lib build:dev && yarn workspace ElectronApp build:dev",
+    "build:pack": "yarn build:dev && yarn workspace ElectronApp build:pack",
     "clean": "yarn lerna run --parallel clean & yarn clean:root",
     "clean:node_modules": "lerna run --parallel clean:node_modules",
     "clean:root": "rimraf node_modules"

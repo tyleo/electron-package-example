@@ -34,7 +34,7 @@ const config: Webpack.Configuration = {
   resolve: {
     extensions: [".js"]
   },
-  target: "node"
+  target: "electron-renderer"
 };
 
 export default config;

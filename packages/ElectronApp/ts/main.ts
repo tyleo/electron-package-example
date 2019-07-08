@@ -14,7 +14,9 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadFile(Path.resolve(`file://${__dirname}`, `../html/index.html`));
+  win.loadFile(
+    Path.resolve(`file://${__dirname}`, `../resources/app.asar/html/index.html`)
+  );
 }
 
 Electron.app.on("ready", createWindow);
